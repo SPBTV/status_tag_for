@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "status_tag_for"
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ["Tema Bolshakov"]
   spec.email         = ["abolshakov@spbtv.com"]
   spec.summary       = "ActiveAdmin component which shows predicate as status."
