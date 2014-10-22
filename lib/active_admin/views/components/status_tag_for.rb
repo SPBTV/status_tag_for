@@ -31,7 +31,7 @@ module ActiveAdmin
       def false_content(args)
         case args.length
         when 0
-          I18n.t('status_tag_for.true', default: 'No')
+          I18n.t('status_tag_for.false', default: 'No')
         when 1
           args.fetch(0)
         when 2
