@@ -5,14 +5,14 @@ require 'active_admin/views/components/status_tag'
 module ActiveAdmin
   module Views
     class StatusTagFor < StatusTag
-      VERSION = '0.0.1'
+      VERSION = '0.0.2'
       builder_method :status_tag_for
 
       def build(condition, *args)
         if condition
-          super(true_content(args), :ok)
+          super(true_content(args), class: 'ok')
         else
-          super(false_content(args), :warn)
+          super(false_content(args), class: 'warn')
         end
       end
 
